@@ -10,10 +10,10 @@ import { QueryResult, APISettings } from '@/lib/types';
 
 const DEFAULT_SETTINGS: APISettings = {
   queryApiUrl: 'https://api.siliconflow.cn/v1/chat/completions',
-  queryApiKey: 'sk-nrszshlxsirtjkehhziwsqjmfthngfwsttwputniagqoichh',
+  queryApiKey: '',
   queryModel: 'deepseek-ai/DeepSeek-V3',
   categoryApiUrl: 'https://api.siliconflow.cn/v1/chat/completions',
-  categoryApiKey: 'sk-nrszshlxsirtjkehhziwsqjmfthngfwsttwputniagqoichh',
+  categoryApiKey: '',
   categoryModel: 'deepseek-ai/DeepSeek-V3',
   categoryEnabled: false,
   predefinedCategories: ['技术', '科学', '历史', '文化', '商业', '医学', '艺术', '体育', '政治', '教育'],
