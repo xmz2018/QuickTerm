@@ -1,0 +1,14 @@
+# docker-compose.yml 文件
+
+services:
+  # 定义我们的 web 服务
+  web:
+    # 使用当前目录下的 Dockerfile 进行构建
+    build: .
+    # 为我们的容器命名
+    container_name: swift-cognito-app
+    # 将主机的 8333 端口映射到容器的 80 端口
+    ports:
+      - "8333:80"
+    # 设置重启策略，以便在容器意外退出时自动重启
+    restart: unless-stopped
